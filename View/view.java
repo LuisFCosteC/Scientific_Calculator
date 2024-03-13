@@ -23,34 +23,38 @@ public class view extends JFrame{
 		JLabel label_Presentation = new JLabel("Scientific Calculator");
 		label_Presentation.setFont(new Font("Arial Black", Font.BOLD, 12));
 		label_Presentation.setForeground(new Color(255, 255, 255));
-		label_Presentation.setBounds(80, 0, 150, 25);
+		label_Presentation.setBounds(90, 0, 150, 25);
 		getContentPane().add(label_Presentation);
 	
 	/*********************************** PANEL ***********************************/
 		JTextField JTextField__Main = new JTextField();
+		JTextField__Main.setToolTipText("");
+		JTextField__Main.setText("0");
 		JTextField__Main.setHorizontalAlignment(SwingConstants.RIGHT);
-		JTextField__Main.setFont(new Font("Arial Black", Font.BOLD, 18));
+		JTextField__Main.setFont(new Font("Arial Black", Font.BOLD, 20));
 		JTextField__Main.setForeground(new Color(255, 255, 255));
 		JTextField__Main.setBackground(new Color(0, 0, 0));
-		JTextField__Main.setBounds(10, 55, 300, 35);
+		JTextField__Main.setBounds(10, 55, 310, 35);
 		getContentPane().add(JTextField__Main);
 		
 		JTextField JTextField__Secondary = new JTextField();
+		JTextField__Secondary.setToolTipText("");
 		JTextField__Secondary.setHorizontalAlignment(SwingConstants.RIGHT);
 		JTextField__Secondary.setFont(new Font("Arial Black", Font.BOLD, 16));
 		JTextField__Secondary.setForeground(new Color(128, 128, 128));
 		JTextField__Secondary.setBackground(new Color(0, 0, 0));
-		JTextField__Secondary.setBounds(10, 25, 300, 25);
+		JTextField__Secondary.setBounds(10, 25, 310, 25);
 		getContentPane().add(JTextField__Secondary);
 		
 	/*********************************** PANEL BUTTONS ***********************************/
 		JPanel panel_Buttons = new JPanel();
 		panel_Buttons.setBackground(new Color(0, 0, 0));
 		panel_Buttons.setForeground(new Color(0, 0, 0));
-		panel_Buttons.setBounds(10, 100, 300, 450);
+		panel_Buttons.setBounds(10, 100, 310, 450);
 		getContentPane().add(panel_Buttons);
 		panel_Buttons.setLayout(new GridLayout(7, 5, 0, 0));
 				
+	/*********************************** BUTTONS ***********************************/
 		JButton btn_2nd = new JButton("2nd");
 		btn_2nd.setFont(new Font("Arial Black", Font.BOLD, 12));
 		btn_2nd.setForeground(new Color(128, 128, 128));
@@ -81,179 +85,179 @@ public class view extends JFrame{
 		btn_Tan.setForeground(new Color(128, 128, 128));
 		panel_Buttons.add(btn_Tan);
 
-		JButton btnNewButton_6 = new JButton("6");
-		btnNewButton_6.setBackground(new Color(0, 0, 0));
-		btnNewButton_6.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_6.setForeground(new Color(128, 128, 128));
-		panel_Buttons.add(btnNewButton_6);
+		JButton btn_X_Elevated_Y = new JButton("X^Y");
+		btn_X_Elevated_Y.setBackground(new Color(0, 0, 0));
+		btn_X_Elevated_Y.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_X_Elevated_Y.setForeground(new Color(128, 128, 128));
+		panel_Buttons.add(btn_X_Elevated_Y);
 		
-		JButton btnNewButton_7 = new JButton("7");
-		btnNewButton_7.setBackground(new Color(0, 0, 0));
-		btnNewButton_7.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_7.setForeground(new Color(128, 128, 128));
-		panel_Buttons.add(btnNewButton_7);
+		JButton btn_lg = new JButton("lg");
+		btn_lg.setBackground(new Color(0, 0, 0));
+		btn_lg.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_lg.setForeground(new Color(128, 128, 128));
+		panel_Buttons.add(btn_lg);
 		
-		JButton btnNewButton_8 = new JButton("8");
-		btnNewButton_8.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_8.setForeground(new Color(128, 128, 128));
-		btnNewButton_8.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_8);
+		JButton btn_ln = new JButton("ln");
+		btn_ln.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_ln.setForeground(new Color(128, 128, 128));
+		btn_ln.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_ln);
 		
-		JButton btnNewButton_9 = new JButton("9");
-		btnNewButton_9.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_9.setForeground(new Color(128, 128, 128));
-		btnNewButton_9.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_9);
+		JButton btn_Open_parentheses = new JButton("(");
+		btn_Open_parentheses.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Open_parentheses.setForeground(new Color(128, 128, 128));
+		btn_Open_parentheses.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Open_parentheses);
 		
-		JButton btnNewButton_10 = new JButton("10");
-		btnNewButton_10.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_10.setForeground(new Color(128, 128, 128));
-		btnNewButton_10.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_10);
+		JButton btn_Close_parentheses = new JButton(")");
+		btn_Close_parentheses.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Close_parentheses.setForeground(new Color(128, 128, 128));
+		btn_Close_parentheses.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Close_parentheses);
 		
-		JButton btnNewButton_11 = new JButton("11");
-		btnNewButton_11.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_11.setForeground(new Color(128, 128, 128));
-		btnNewButton_11.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_11);
+		JButton btn_X_Elevated_2 = new JButton("X^2");
+		btn_X_Elevated_2.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_X_Elevated_2.setForeground(new Color(128, 128, 128));
+		btn_X_Elevated_2.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_X_Elevated_2);
 
-		JButton btnNewButton_12 = new JButton("12");
-		btnNewButton_12.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_12.setForeground(new Color(204, 153, 51));
-		btnNewButton_12.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_12);
+		JButton btn_Deleted_Complete = new JButton("C");
+		btn_Deleted_Complete.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Deleted_Complete.setForeground(new Color(204, 153, 51));
+		btn_Deleted_Complete.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Deleted_Complete);
 
-		JButton btnNewButton_13 = new JButton("13");
-		btnNewButton_13.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_13.setForeground(new Color(204, 153, 51));
-		btnNewButton_13.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_13);
+		JButton btn_Eliminated_Partial = new JButton("<<");
+		btn_Eliminated_Partial.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Eliminated_Partial.setForeground(new Color(204, 153, 51));
+		btn_Eliminated_Partial.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Eliminated_Partial);
 		
-		JButton btnNewButton_14 = new JButton("14");
-		btnNewButton_14.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_14.setForeground(new Color(204, 153, 51));
-		btnNewButton_14.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_14);
+		JButton btn_Percentage = new JButton("%");
+		btn_Percentage.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Percentage.setForeground(new Color(204, 153, 51));
+		btn_Percentage.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Percentage);
 		
-		JButton btnNewButton_15 = new JButton("15");
-		btnNewButton_15.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_15.setForeground(new Color(204, 153, 51));
-		btnNewButton_15.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_15);
+		JButton btn_Division = new JButton("/");
+		btn_Division.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Division.setForeground(new Color(204, 153, 51));
+		btn_Division.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Division);
 		
-		JButton btnNewButton_16 = new JButton("16");
-		btnNewButton_16.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_16.setForeground(new Color(128, 128, 128));
-		btnNewButton_16.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_16);
+		JButton btn_Square_Root = new JButton("√ x");
+		btn_Square_Root.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Square_Root.setForeground(new Color(128, 128, 128));
+		btn_Square_Root.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Square_Root);
 		
-		JButton btnNewButton_17 = new JButton("17");
-		btnNewButton_17.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_17.setForeground(new Color(255, 255, 255));
-		btnNewButton_17.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_17);
+		JButton btn_Number_7 = new JButton("7");
+		btn_Number_7.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_7.setForeground(new Color(255, 255, 255));
+		btn_Number_7.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_7);
 		
-		JButton btnNewButton_18 = new JButton("18");
-		btnNewButton_18.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_18.setForeground(new Color(255, 255, 255));
-		btnNewButton_18.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_18);
+		JButton btn_Number_8 = new JButton("8");
+		btn_Number_8.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_8.setForeground(new Color(255, 255, 255));
+		btn_Number_8.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_8);
 
-		JButton btnNewButton_19 = new JButton("19");
-		btnNewButton_19.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_19.setForeground(new Color(255, 255, 255));
-		btnNewButton_19.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_19);
+		JButton btn_Number_9 = new JButton("19");
+		btn_Number_9.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_9.setForeground(new Color(255, 255, 255));
+		btn_Number_9.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_9);
 
-		JButton btnNewButton_20 = new JButton("20");
-		btnNewButton_20.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_20.setForeground(new Color(204, 153, 51));
-		btnNewButton_20.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_20);
+		JButton btn_Multiplication = new JButton("X");
+		btn_Multiplication.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Multiplication.setForeground(new Color(204, 153, 51));
+		btn_Multiplication.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Multiplication);
 		
-		JButton btnNewButton_21 = new JButton("21");
-		btnNewButton_21.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_21.setForeground(new Color(128, 128, 128));
-		btnNewButton_21.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_21);
+		JButton btn_Factorial = new JButton("n!");
+		btn_Factorial.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Factorial.setForeground(new Color(128, 128, 128));
+		btn_Factorial.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Factorial);
 		
-		JButton btnNewButton_40 = new JButton("22");
-		btnNewButton_40.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_40.setForeground(new Color(255, 255, 255));
-		btnNewButton_40.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_40);
+		JButton btn_Number_4 = new JButton("4");
+		btn_Number_4.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_4.setForeground(new Color(255, 255, 255));
+		btn_Number_4.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_4);
 		
-		JButton btnNewButton_22 = new JButton("23");
-		btnNewButton_22.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_22.setForeground(new Color(255, 255, 255));
-		btnNewButton_22.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_22);
+		JButton btn_Number_5 = new JButton("5");
+		btn_Number_5.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_5.setForeground(new Color(255, 255, 255));
+		btn_Number_5.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_5);
 		
-		JButton btnNewButton_23 = new JButton("24");
-		btnNewButton_23.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_23.setForeground(new Color(255, 255, 255));
-		btnNewButton_23.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_23);
+		JButton btn_Number_6 = new JButton("6");
+		btn_Number_6.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_6.setForeground(new Color(255, 255, 255));
+		btn_Number_6.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_6);
 		
-		JButton btnNewButton_24 = new JButton("25");
-		btnNewButton_24.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_24.setForeground(new Color(204, 153, 51));
-		btnNewButton_24.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_24);
+		JButton btn_Subtraction = new JButton("-");
+		btn_Subtraction.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Subtraction.setForeground(new Color(204, 153, 51));
+		btn_Subtraction.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Subtraction);
 
-		JButton btnNewButton_25 = new JButton("26");
-		btnNewButton_25.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_25.setForeground(new Color(128, 128, 128));
-		btnNewButton_25.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_25);
+		JButton btn_Pi = new JButton("π");
+		btn_Pi.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Pi.setForeground(new Color(128, 128, 128));
+		btn_Pi.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Pi);
 
-		JButton btnNewButton_26 = new JButton("27");
-		btnNewButton_26.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_26.setForeground(new Color(255, 255, 255));
-		btnNewButton_26.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_26);
+		JButton btn_Number_1 = new JButton("1");
+		btn_Number_1.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_1.setForeground(new Color(255, 255, 255));
+		btn_Number_1.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_1);
 		
-		JButton btnNewButton_27 = new JButton("28");
-		btnNewButton_27.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_27.setForeground(new Color(255, 255, 255));
-		btnNewButton_27.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_27);
+		JButton btn_Number_2 = new JButton("2");
+		btn_Number_2.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_2.setForeground(new Color(255, 255, 255));
+		btn_Number_2.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_2);
 		
-		JButton btnNewButton_28 = new JButton("29");
-		btnNewButton_28.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_28.setForeground(new Color(255, 255, 255));
-		btnNewButton_28.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_28);
+		JButton btn_Number_3 = new JButton("3");
+		btn_Number_3.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_3.setForeground(new Color(255, 255, 255));
+		btn_Number_3.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_3);
 		
-		JButton btnNewButton_29 = new JButton("30");
-		btnNewButton_29.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_29.setForeground(new Color(204, 153, 51));
-		btnNewButton_29.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_29);
+		JButton btn_Addition = new JButton("+");
+		btn_Addition.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Addition.setForeground(new Color(204, 153, 51));
+		btn_Addition.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Addition);
 		
-		JButton btnNewButton_30 = new JButton("31");
-		btnNewButton_30.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_30.setForeground(new Color(128, 128, 128));
-		btnNewButton_30.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_30);
+		JButton btn_Euler = new JButton("e");
+		btn_Euler.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Euler.setForeground(new Color(128, 128, 128));
+		btn_Euler.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Euler);
 		
-		JButton btnNewButton_31 = new JButton("32");
-		btnNewButton_31.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_31.setForeground(new Color(204, 153, 51));
-		btnNewButton_31.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_31);
+		JButton btn_More_or_Less = new JButton("±");
+		btn_More_or_Less.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_More_or_Less.setForeground(new Color(204, 153, 51));
+		btn_More_or_Less.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_More_or_Less);
 		
-		JButton btnNewButton_32 = new JButton("33");
-		btnNewButton_32.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_32.setForeground(new Color(255, 255, 255));
-		btnNewButton_32.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_32);
+		JButton btn_Number_0 = new JButton("0");
+		btn_Number_0.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Number_0.setForeground(new Color(255, 255, 255));
+		btn_Number_0.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Number_0);
 		
-		JButton btnNewButton_33 = new JButton("34");
-		btnNewButton_33.setFont(new Font("Arial Black", Font.BOLD, 12));
-		btnNewButton_33.setForeground(new Color(204, 153, 51));
-		btnNewButton_33.setBackground(new Color(0, 0, 0));
-		panel_Buttons.add(btnNewButton_33);
+		JButton btn_Coma = new JButton(",");
+		btn_Coma.setFont(new Font("Arial Black", Font.BOLD, 12));
+		btn_Coma.setForeground(new Color(204, 153, 51));
+		btn_Coma.setBackground(new Color(0, 0, 0));
+		panel_Buttons.add(btn_Coma);
 		
 		btn_Equal = new JButton("=");
 		btn_Equal.setFont(new Font("Arial Black", Font.BOLD, 12));
